@@ -4,9 +4,9 @@ import { Companion } from "@prisma/client";
 import { ChatMessage, ChatMessageProps } from "@/components/chat-message";
 import { ElementRef, useEffect, useRef, useState } from "react";
 
-interface ChatMessagesProps {
+interface ChatMessageProps {
     
-    messages: ChatMessagesProps[];
+    messages: ChatMessageProps[];
     isLoading: boolean;
     companion: Companion;
 }
@@ -15,7 +15,7 @@ export const ChatMessages = ({
     messages = [],
     isLoading,
     companion
-}: ChatMessagesProps) => {
+}: ChatMessageProps) => {
     const scrollRef = useRef<ElementRef<"div">>(null);
 
 
