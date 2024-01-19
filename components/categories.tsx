@@ -55,7 +55,7 @@ export const Categories = ({
             >
                 Newest
             </button>
-            {data.map((item) => (
+            {data.map((item) => ( // eslint-disable-next-line react/jsx-key
                 <button
                 onClick={() => onClick(item.id)}
                 className={cn(`
