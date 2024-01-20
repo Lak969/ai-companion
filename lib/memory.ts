@@ -10,7 +10,7 @@ export type CompanionKey = {
   userId: string;
 };
 
-export class MemoryManager {
+export class MemoryManager { 
   private static instance: MemoryManager;
   private history: Redis;
   private vectorDBClient: PineconeClient;
